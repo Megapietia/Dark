@@ -620,8 +620,6 @@ INPUT[type="text"], textarea {
     width: 8%;
     border: 3px solid #252525;
     background: transparent;
-    font-size: 20px;
-    text-transform: uppercase;
     outline: none;
     cursor: pointer;
     position: relative;
@@ -726,9 +724,6 @@ INPUT[type="text"], textarea {
         width: 80%;
     }
 
-    .header_menu {
-        margin-left: 33px;
-    }
     .img_logo {
         bottom: -8%;
         left: 46.5%;
@@ -737,8 +732,9 @@ INPUT[type="text"], textarea {
 @media(max-width: 992px){
 
     .pics:hover .fa-expand-arrows {
-        bottom: 40%;
-        left: 45%;
+        bottom: 44%;
+        left: 47%;
+        font-size: 30px;
     }
     .content_do-menu:hover {
         transform: matrix(1.1,0,0.0,1.2,-6,0);
@@ -749,10 +745,9 @@ INPUT[type="text"], textarea {
     }
     .forms{
         margin: 0 auto;
-        padding: 20px 0 50px 0;
     }
     .forms_column{
-        width: 50%;
+        width: 80%;
         margin-bottom: 20px;
     }
     .forms_column input{
@@ -761,11 +756,16 @@ INPUT[type="text"], textarea {
 
     .forms textarea{
         margin-right: 20px;
+    } 
+    .footer {
+        padding-top: 50px;
     }
- 
-    
+    .content_feedbacks {
+        min-height: 1150px;
+    }
 }
 @media(max-width: 768px){
+    
     .content_img>.pics{
         width: 50%;
     }
@@ -804,6 +804,9 @@ INPUT[type="text"], textarea {
         top: 65px;
     }
 
+    .content_feedbacks {
+        padding-bottom: 40px;
+    }
 }
 @media(max-width: 600px){
     .content_skills span{
@@ -879,16 +882,57 @@ INPUT[type="text"], textarea {
     }
     /* *Fifth */
     .content_skills span:nth-of-type(5) .right::before{
-        width: 265px;
+        width: 164px;
     }
 
     .content_skills span:nth-of-type(3) .right .right_inside::before {
-        width: 165px;
+        width: 125px;
     }
     .fa-telegram-plane{
         font-size: 20px;
     }
+    .footer_header {
+        max-width: 450px;
+        margin: 0 0 0 20px;
+    }
+    .footer_header h3{
+        font-size: 18px;
+    }
+    .socials {
+        max-width: 300px;
+    }
+    .img_logo {
+        width: 45px;
+        height: 45px;
+    }
+    .img_logo-inside{
+        font-size: 10px;
+    }
+    .area .form_btn {
+        width: 10%;
+    }
+    .item {
+        width: 100%;
+        margin: 0px 0 0 10px;
+    }
+    .go_up {
+        margin: 0;
+    }
+    .content_text p {
+        text-align: justify;
+        line-height: 25px;
+    }
+    .content_do {
+        margin-left: 0;
+    }
+    .content_do-menu{
+        margin-top: 30px;
+    }
+    .content_do i{
+        font-size: 50px;
+    }   
+    .content_do p{
+        font-size: 13px;
+    }
 }
 
-}
-@media(max-width: 320px){}
