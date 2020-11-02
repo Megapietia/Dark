@@ -204,7 +204,10 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: var(--Lr400);
+  font-weight: 400;
   text-decoration: underline;
 }
 

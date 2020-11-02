@@ -9,9 +9,9 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 <body class="body_hide">
+    <div id="p_prldr"><div class="contpre"><span class="svg_anm"></span><br>Подождите<br><small>идет загрузка</small></div></div>
 
     <!-- *Todo Header -->
-
     <header class="header">
         <div class="header_menu">
             <nav class="navbar">
@@ -80,7 +80,6 @@
     </header> 
 
     <!-- *Todo First Section -->
-
     <section class="content">
         <div class="content_box">
             <div class="content_column">
@@ -309,5 +308,12 @@
 
     <script src="js/code.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>  
+    <script type="text/javascript">$(window).on('load', function () {
+        var $preloader = $('#p_prldr'),
+            $svg_anm   = $preloader.find('.svg_anm');
+        $preloader.delay(500).fadeOut('slow');
+    });</script>
+
 </body>
 </html>

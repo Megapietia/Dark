@@ -8,13 +8,46 @@
     --Lr400: 'Lato-Regular';
 }
 
-.body_hide {
+#p_prldr{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    background: black;
+    z-index: 200;}
+     
+.contpre small{font-size:25px;}
+     
+.contpre{
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    left: 50%;top: 48%;
+    margin-left:-125px;
+    margin-top:-75px;
+    color:#fff;
+    font-size:40px;
+    letter-spacing:-2px;
+    text-align:center;
+    line-height:35px;}
+     
+#p_prldr .svg_anm {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    background: url(../images/oval.svg) center center no-repeat;
+    background-size:41px;    
+    margin: -16px 0 0 -16px;}
+
+
+/* .body_hide {
 	opacity: 0;
 	transition: .9s opacity ease-in-out;
 }
 .body_visible {
 	opacity: 1;
-}
+} */
 
 .header {
     width: 100%;
@@ -82,10 +115,7 @@
     width: 100%;
     align-items: center;
 }
-.scroll .iconify{
-    font-size: 30px;
-    animation: colorRotate 6s linear 0s infinite;
-}
+
 .scroll .iconify{
     font-size: 30px;
     animation-name: Move, colorRotate;
@@ -357,6 +387,7 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    background: black;
 
 }
 .content_img>.pics{
@@ -459,7 +490,7 @@
     animation-duration: 0.5s;
     color: #d70231;
     bottom: 45%;
-    left: 50%; 
+    left: 47%; 
     display: block;
 }
 
@@ -708,6 +739,10 @@ INPUT[type="text"], textarea {
     color: #d70231;
 }
 
+.fa-angle-up{
+    font-size: 30px;
+}
+
 @media(max-width: 1200px){}
 @media(max-width: 1024px){
     .content_box{
@@ -858,7 +893,8 @@ INPUT[type="text"], textarea {
         width: 290px;
     }
     .left::before {
-        left: -28px;
+        left: -12px;  
+        width: 15px;
     }
 
     /* *First */
@@ -933,6 +969,9 @@ INPUT[type="text"], textarea {
     }   
     .content_do p{
         font-size: 13px;
+    }
+    .content_column {
+        width: 90%;
     }
 }
 
