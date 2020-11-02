@@ -418,16 +418,21 @@
 }
 
 /* !!!!!! Настройка ховероф для картинок !!!!!!!*/
-.pics, #growing{
-    position: relative;
-    transition: 0.5s; 
+.pics{
+    position: relative;   
 }
+/* 
+.zoom-left{
+    transition: 0.3s; 
+    transform: matrix(1.2,0,0.0,1.2,45,0);
+    z-index: 101;
+} */
+
  .pic{
     content: '';
     position: absolute;
     width: 45px;
-    height: 45px;
-   
+    height: 45px; 
 } 
 
 .pics:hover .pic_top_left, .item:hover .pic_top_left{
@@ -743,7 +748,12 @@ INPUT[type="text"], textarea {
     font-size: 30px;
 }
 
-@media(max-width: 1200px){}
+@media(min-width: 1400px){
+    .img_logo {
+        bottom: -5%;
+        left: 48%;
+    }
+}
 @media(max-width: 1024px){
     .content_box{
         flex-wrap: wrap;
